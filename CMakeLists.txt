@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(imu)
+project(im900)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
+
+add_compile_options(-fexec-charset=UTF-8)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -123,7 +125,7 @@ include
 
 # Declare a C++ library
 add_library(im948_CMD
-  include/${PROJECT_NAME}/im948_CMD
+  include/imu/im948_CMD
   src/im948_CMD.cpp
 )
 
